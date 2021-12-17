@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/info.css" media="screen">
+  </head>
+  <body>
+
+    <div id="sidenav" class="sidenav">
+    <a href="https://hyperspacesnft.com" target="_blank">
+      <img src="images/logo.png" width="150" height="150">
+    </a>
+      <a id="closeButton" class="closeButton" onclick="closeNav()">&times;</a>
+      <a href="#welcome" onclick="closeNav()">Welcome</a>
+      <a href="#generate" onclick="closeNav()">Generating Hyper-Spaces</a>
+      <a href="#scarcity" onclick="closeNav()">Scarcity Rating</a>
+      <a href="#pricing" onclick="closeNav()">Price</a>
+      <a href="#mint" onclick="closeNav()">Hyper-Mint Technology</a>
+      <a href="#ar" onclick="closeNav()">AR Hyper-Spaces</a>
+    </div>
+
+    <div class="back">
+    <div class="back-overlay">
+    <div class="main">
+      <span class="openButton" onclick="openNav()">
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+      </span>
+      <h1 id="welcome" class="title">Hyper-Spaces Info</h1>
+
+      <h2>Welcome</h2>
+      <p>Welcome to the Hyper-Spaces info page, here you can find all information you need about the Hyper-Spaces metaverse. 
+        However, if you have any doubt contact our social page or join our <a class="links" href="https://discord.gg/HQKz2n8XQ9" target="_blank">Discord</a>, we are here to help you.
+      </p>
+
+      <h4>What is it?</h4>
+      <p>The Hyper-Spaces project comes form desire that everybody has, own a space in which everything is possible. 
+        Indeed, it is a collection of NFTs which represent the projection of hyper-dimensional spaces inspired by string theory geometry. 
+        <br>
+        There are 1014 HS build through an algorithm that combines differents shape and texture parameters. 
+        This ensures that each space is an unique freedom place for its owner.
+        <br>
+        The base representation of an HS is a FullHD+ video that encoureges your hyper-connection.
+      </p>
+
+      <h4>What are NFTs?</h4>
+      <p>NFTs are assets, usually media contents, whose ownership and origin is certified by a blockchain.
+        <br>
+        The blockchain stores all information about the life of a NFT: who creates it, who was the first owner, how much he paid for it…
+        <br>
+        From a technical point of view an NFT is a standard way to write a Smart Contract (a programs that runs on the blockchain). 
+        This means that you can use NFT in many ways: as tickets for a football match or as virtual pass for exclusive clubs…
+        <br>
+        The main concept is that the ownership and origin is cettified, then you can apply this feature to many field.
+      </p>
+  
+      <h2 id="generate">Generating Hyper-Spaces</h2>
+      <p>First of it's important to understand how a Hyper-Space is generated and what are the features that define its Scarcity Rating. 
+        To lighten the discussion, let's introduce a shorthand: Hyper-Space (HS), Base Numbers (BN), Texture (TEX), Projection Angle (PA), Distortion (DIS).
+      </p>
+      <p>For simplicity let's focus on the Hyper-Space 9|6-44. 
+        As said in the Core section of the Home page, its BN are 9 and 6 and its TEX is the number 44. 
+        The BN are the crucial parameters the define its shape, BN goes from 3 to 15 and this means that there are 169 different BN combinations called Classes. 
+        Yes, 9|6 and 6|9 are different HS.<br>
+        Each BN combination comes with 6 different TEX, so there are 6 different 9|6 HS called 9|6-44, 9|6-TEX_2 up to 9|6-TEX_6. 
+        The result of 169 Classes times 6 TEX you got 1014 unique HS. 
+        Despite BN and TEX identify uniquely an HS there are 2 more parameters: the Projection Angle and the Distortion. 
+        These two numbers are random attributes and each HS has its PA and DIS, you will never find two HS with the same PA or DIS.<br>
+        The Projection angle influences the shape of the HS, remember an HS is a hyper-dimensional space that has to be projected into our 3D space. Wit
+        hout entering in boring mathematical details, the question is "How to project it into 3D space ?" and the answer is to choose a PA value. 
+        If PA has a low value the shape of the HS is cylinder-like, on the other hand as PA gets closer to 7854 the shape is flower-like. 
+        You may think "Why 7854 is special?" well it corresponds to 45 degrees, which is about 0.7854 radiants.<br>
+        The Distortion influences the TEX appearance: the higher its value, the more intricate is the texture obtained.
+      </p>
+      <p>
+        To recap, there are 169 different classes, but each HS has a different PA and this means 1014 unique shapes. 
+        So for example the 6 HS which belong to Class 9|6 will have different shapes despite they belong to the same class. 
+        Remark that close PA values are difficult to distinguish with the human eye. 
+        The same applies to the TEX, there are 72 different TEX but each HS has a unique DIS value and this means there aren't exactly equal textures.
+      </p>
+      <p>
+        So the main thing to catch is that an HS is defined by its BN and TEX, but each HS has a unique shape-parameter that 
+        makes HS of the same Class slightly different and a unique texture-parameter that makes the same TEX slightly different.
+      </p>
+
+      <h2 id="scarcity">Scarcity Rating</h2>
+      <p>Let's discuss the statistical distribution of HS parameters. 
+        The crucial thing to keep in mind is that PA and DIS don't influence the Scarcity of an HS. 
+        The only features that matters are BN and TEX. If you forget about appearance and focus on BN, n1|n2, and TEX, 
+        understand the Scarcity Rating it's really simple.
+        The Scarcity Rating of an HS has two contributes, one comes from its BN and the other from its TEX.
+      </p>
+      <p>
+        First, let's consider the BN, as said many times, there are 169 different Classes: 3|3, 3|4, 3|5 up to 15|15. 
+        Using simple math, it's clear that Classes with the same BN are less abundant. 
+        There are exactly 13 Symmetric Classes: 3|3, 4|4, up to 15|15. From this simple consideration, 
+        it's natural to attribute a higher Scarcity Rating to the Symmetric HS.
+        So if an HS is Symmetric it has a +6 BN contribution, if it is not the BN contribution is 0.<br>
+      </p>
+      <p>
+        Then, the 72 different TEX values are divided in 12 levels. For example, TEX = {1,2,3,4,5,6} 
+        belong to the first TEX level, in particular it is the most abundant, while TEX = {67,68,69,70,71,72} 
+        belong to the most rare TEX level.<br>
+        So we have 72 different TEXs which are divided into 12 levels, the TEX contribution to the final Scarcity Rating 
+        of an HS reflects its statistical distribution. 
+        In concrete, the first TEX level has a +1 TEX contribution and the last level has a +12 texture contribution.
+      </p>
+      
+<table>
+  <tr>
+    <th>TEX</th>
+    <th>TEX Contribution</th>
+  </tr>
+  <tr>
+    <td>1,2,3,4,5,6</td>
+    <td>+1</td>
+  </tr>
+  <tr>
+    <td>7,8,9,10,11,12</td>
+    <td>+2</td>
+  </tr>
+  <tr>
+    <td>13,14,15,16,17,18</td>
+    <td>+3</td>
+  </tr>
+  <tr>
+    <td>19,20,21,22,23,24</td>
+    <td>+4</td>
+  </tr>
+  <tr>
+    <td>25,26,27,28,29,30</td>
+    <td>+5</td>
+  </tr>
+  <tr>
+    <td>31,32,33,34,35,36</td>
+    <td>+6</td>
+  </tr>
+  <tr>
+    <td>37,38,39,40,41,42</td>
+    <td>+7</td>
+  </tr>
+  <tr>
+    <td>43,44,45,46,47,48</td>
+    <td>+8</td>
+  </tr>
+  <tr>
+    <td>49,50,51,52,53,54</td>
+    <td>+9</td>
+  </tr>
+  <tr>
+    <td>55,56,57,58,59,60</td>
+    <td>+10</td>
+  </tr>
+  <tr>
+    <td>61,62,63,64,65,66</td>
+    <td>+11</td>
+  </tr>
+  <tr>
+    <td>67,68,69,70,71,72</td>
+    <td>+12</td>
+  </tr>
+</table>
+
+      <p> So the final Scarcity Rating is the sum of the BN contribution and the TEX contribution. 
+        For example, 9|6-44 is not Symmetric and belong to level 8, 
+        this gives a Scarcity Rating = 7.
+        The minimum Scarcity Rating is 1 and the maximum is 18. This rating allows dividing the HS into 3 categories: 
+        COMMON from 1 to 5, RARE from 6 to 10, SUPER RARE from 11 to 18.
+      </p>
+
+      <h2 id="pricing">Price</h2>
+      <p>The main purpose of the Hyper-Spaces Team is to bring valuable NFTs into the wallet of those who like our project. 
+        For us valuable NFTs means: 
+        <ul>
+          <li>An <a class="links" href="https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC721" target="_blank">ERC721-Standard</a> Smart Contract with a Low Maximum Supply.</li>
+          <li>A non-trivial graphical representation of the token.</li>
+          <li>A unique project among the many in the Crypto-Space.</li>
+        </ul>
+        Our will is to make accessible HS to those who love the project, with this in mind we decided to keep the price as low as possible. 
+        The adopted strategy is the following: the price of an HS starts from a BASE PRICE and grows linearly at each minted HS of an ADDITIONAL PRICE.
+      </p>
+      <h4 style="text-align: center; " >price = BASE_PRICE + ADD_PRICE &times mintedSupply</h4>
+      <p>
+        This model has one important advantage concerning a constant price. A constant PRICE leads to a total collection value (at the time of the minting day) equal to PRICE &times MAX_SUPPLY.
+        Using a growing price leads to the same total collection value but allows accessibility to those most love the project.
+        The BASE_PRICE and the ADD_PRICE will be comunicated about 1 week before the drop day on our <a class="links" href="https://discord.gg/HQKz2n8XQ9" target="_blank">Discord</a>. 
+      </p>
+
+      <h2 id="mint">Hyper-Mint Technology</h2>
+      <p>
+        The HS collection lives on the Polygon Network which means low transaction and minting fees. 
+        If you are familiar with Polygon and you already have a MetaMask wallet get your HS will be really easy for you. If not follow the instructions below.
+      </p>
+      <ol>
+        <li>The first step is to have a MetaMask wallet: it is a web extension which you can download at <a class="links" href="https://metamask.io/" target="_blank">metamask.io</a>. 
+          Be careful with MetaMask, follow their instruction and you will not have problems.</li>
+        <li>Then you need to add the Polygon Network to your MetaMask wallet, to do this follow <a class="links" href="https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/" target="_blank">these</a> instruction.</li>
+        <li>The last step is to move funds to your wallet. This can be achieved in many ways but the best way is to avoid Ethereum Network. 
+          So our suggestion is to buy MATIC from an exchange that supports the Polygon Network, for example Binance. Then you can send MATIC to your wallet using the Polygon Network.</li>
+        <li>Once you recived your MATIC on MetaMask, you just need to swap them for <a class="links" href="https://polygonscan.com/token/0x7ceb23fd6bc0add59e62ac25578270cff1b9f619" target="_blank">WETH</a>. You can do it on any Polygon DEX, for example we suggest <a class="links" href="https://quickswap.exchange/#/swap">QuickSwap</a>.</li>  
+      </ol>
+      Now that you have WETH on the Polygon Network you only have to wait the Drop day. Once the timer diplayed on our home page ends the Hyper-Mint button will be activated, 
+      click it and you will be redirected to the minting page.
+      <p>
+      <p>
+        In this page you can view the actual price of HS. To mint yours HS you have to select the amount of HS you want and press the APPROVE button to allow the contract to handle your WETH. 
+        Notice that only the required WETH amount will be approved. Once the Approval transaction success you will see the HYPER-MINT button, press it and you will mint your HS. 
+        To view your HS in your wallet simply add $HSN token to MetaMask: copy the contract address, open Metamask and click the button Import Token, paste the address and set decimals to 0.
+        Well done, now you own HS.<br>
+        The interface of the minting page will show your HS Attibutes you just got, and then it will load the video. 
+        However there is a small possibility that the video loading fails. This because the video has high resoltion (1920x1920) thus it is a quite big file. 
+        If unfortunately the interface fails to load Attibutes or video don't worry, you can go to the OpenSea HS page and wait your HS there.
+      </p>
+      <p>
+        Our technology has been built to ensure Decentralization, which we think is crucial. To achieve this both our websites and NFTs data live on the <a class="links" href="https://ipfs.io/">IPFS</a>, 
+        this follows the blockchain concept of a decentralized web. Moreover HS files are high quality media the download requires time. Even OpenSea will not immidiatly display HS. 
+      </p>
+      <p>
+        For every questions or doubt don't hesitate to ask, we are here for you: <a class="links" href="https://discord.gg/HQKz2n8XQ9" target="_blank">Discord</a>.
+      </p>
+
+      </p>
+      <h2 id="ar">AR Hyper-Spaces</h2>
+      <p>
+        Probably the aspect that most makes our project unique is the subject, namely HS are 3D objects. 
+        Our purpouse is to bring to you a complete HS experience, and this means that an HS is not just a video but they offer the possibility to build 3D visualization.
+        The first step of HS experience is to implement Augmented Reality in the project. 
+        To achieve this we already released a AR Hyper-Spaces page (Beta version) in which you can scan a Marker image and live an AR expirience. 
+        We really think that regular update of the project is a priority, both before and after the minting day, thus we will not stop here.
+        In the following weeks AR Hyper-Spaces will be update to a full version, moreover we are currently working on further 3D implementation of HS.
+        To date there are a lot of platform that offers AR or VR, one example that we suggest to look at is the <a class="links" href="https://ovr.ai" target="_blank">OVR platform</a> which allows you to buy OVRLand and fill them with 3D content.
+        If you prefer VR instead of AR, maybe you have some land in Decentraland or in any other VR metaverses. Then we can bring 3D representation of HS on your land.<br>
+        Again, we really want to give you a full HS experience, so if you have any request or idea to implement 3D rapresentation of HS contact us, we are here for you.  
+      </p>
+    </div>
+    </div>
+    </div>
+
+    <script>
+      /* Open the sidenav */
+      function openNav() {
+        document.getElementById("sidenav").style.width = "100%";
+
+      }
+
+      /* Close/hide the sidenav */
+      function closeNav() {
+        if(window.outerWidth < 450){
+          document.getElementById("sidenav").style.width = "0";
+        }
+
+      }
+    </script>
+    
+  </body>
+</html> 

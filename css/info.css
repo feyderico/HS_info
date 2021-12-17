@@ -1,0 +1,133 @@
+body {
+    font-family: Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+    margin: 0%;
+  }
+
+  .back{
+    background-image: url("../images/bg.png");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .back-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 20%;      /* Have to be equal */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /*background-color: rgba(0, 0, 0,0.5);*/
+    overflow-x: hidden;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: me;
+    color: white;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color:rgb(141, 191, 255); 
+  }
+
+  .title{
+    text-align: center;
+    font-size: 48px;
+    padding: 0px 20px;
+  }
+  
+  .main {
+    margin-left: 20%; /* Have to be equal */
+    margin-right: 20%;
+    font-size: 16px; 
+    line-height: 1.6;
+    padding: 0px 100px;
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+
+  .links{
+    color:rgb(141, 191, 255); 
+  }
+
+  .main .openButton{
+    visibility: hidden;
+  }
+  .sidenav .closeButton {
+    visibility: hidden;
+  }
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: auto;
+  }
+  tr:hover {
+    color:rgb(141, 191, 255); 
+  }
+  tr, th, td {
+    border-style: solid none solid none;
+    border-width: 1px;
+    border-color: rgba(256, 256, 256, 0.2);
+    padding: 2px 20px 2px 2px;
+  }
+
+  @media screen and (max-width: 500px) {
+
+  .title{
+    padding: 40px 0px;
+  }
+    
+  .main .openButton{
+    background-color: black;
+    color: black;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    padding: 2px;
+    visibility: visible;
+  }
+
+  .main .menu-icon{
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+  }
+
+  .main{
+    margin-left: 0px;
+    margin-right: 0px; 
+    padding: 0px 20px;
+  }
+
+  .sidenav .closeButton {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    visibility: visible;
+  }
+  
+  .sidenav {
+    padding-top: 15px;
+    width: 0%;
+    background-color: rgba(0, 0, 0,0.9);
+  }
+  .sidenav a {
+    font-size: 18px;
+    line-height: 2;
+  }
+}
